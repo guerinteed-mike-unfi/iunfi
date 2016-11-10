@@ -161,16 +161,24 @@
         {# 2 column section #}
         {% if page.twocol_left or page.twocol_right %}
           <div id="twocol-wrapper">
-          
-            {# twocol_left #}
-            {% if page.twocol_left %}
-              {{ page.twocol_left }}
-            {% endif %}  
             
-            {# twocol_right #}
-            {% if page.twocol_right %}
-              {{ page.twocol_right }}
-            {% endif %}  
+            <div id="twocol-left-wrapper" class="col-md-6 col-xs-6 col-sm-6">
+              {# twocol_left #}
+              {% if page.twocol_left %}
+                {% block twocol_left %}
+                  {{ page.twocol_left }}
+                {% endblock %}
+              {% endif %}  
+            </div>
+            
+            <div id="twocol-right-wrapper" class="col-md-6 col-xs-6">
+              {# twocol_right #}
+              {% if page.twocol_right %}
+                {% block twocol_right %}
+                  {{ page.twocol_right }}
+                {% endblock %}
+              {% endif %} 
+            </div> 
             
           </div>
         {% endif %}
@@ -178,21 +186,27 @@
         {# 3 column section #}
         {% if page.threecol_left or page.threecol_center or page.threecol_right %}
           <div id="threecol-wrapper">
-          
-            {# threecol_left #}
-            {% if page.threecol_left %}
-              {{ page.threecol_left }}
-            {% endif %}  
             
-            {# threecol_center #}
-            {% if page.threecol_center %}
-              {{ page.threecol_center }}
-            {% endif %}  
+            <div id="threecol-left-wrapper" class="col-xs-6 col-sm-4">
+              {# threecol_left #}
+              {% if page.threecol_left %}
+                {{ page.threecol_left }}
+              {% endif %}  
+            </div>
             
-            {# threecol_right #}
-            {% if page.threecol_right %}
-              {{ page.threecol_right }}
-            {% endif %}  
+            <div id="threecol-center-wrapper" class="col-xs-6 col-sm-4">
+              {# threecol_center #}
+              {% if page.threecol_center %}
+                {{ page.threecol_center }}
+              {% endif %}  
+            </div>
+            
+            <div id="threecol-right-wrapper" class="col-xs-6 col-sm-4">
+              {# threecol_right #}
+              {% if page.threecol_right %}
+                {{ page.threecol_right }}
+              {% endif %}  
+            </div>
             
           </div>
         {% endif %}
