@@ -50,14 +50,15 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
+    'block-1col',
     'clearfix',
   ]
 %}
 <section{{ attributes.addClass(classes) }}>
-  <div class="block-part-left">
+  <div class="pull-left img-div">
     {{ content.field_image_block }}
   </div>
-  <div class="block-part-right">
+  <div class="pull-right text-div">
     {{ title_prefix }}
     {% if label %}
       <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>

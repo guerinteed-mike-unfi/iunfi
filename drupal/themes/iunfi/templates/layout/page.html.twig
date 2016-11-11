@@ -160,7 +160,7 @@
         
         {# 2 column section #}
         {% if page.twocol_left or page.twocol_right %}
-          <div id="twocol-wrapper">
+          <div id="twocol-wrapper" class="row">
             
             <div id="twocol-left-wrapper" class="col-md-6 col-xs-6 col-sm-6">
               {# twocol_left #}
@@ -180,12 +180,13 @@
               {% endif %} 
             </div> 
             
+            <div class="clearfix visible-xs-block"></div>
           </div>
         {% endif %}
         
         {# 3 column section #}
         {% if page.threecol_left or page.threecol_center or page.threecol_right %}
-          <div id="threecol-wrapper">
+          <div id="threecol-wrapper" class="row">
             
             <div id="threecol-left-wrapper" class="col-xs-6 col-sm-4">
               {# threecol_left #}
@@ -209,6 +210,8 @@
             </div>
             
           </div>
+          <div class="clearfix visible-xs-block"></div>
+          
         {% endif %}
         
       </section>
@@ -220,6 +223,7 @@
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
       {{ page.footer }}
+      <div id="copyright-year"><p>&copy; 1999-{{ "now"|date("Y") }} United Natural Foods, Inc.</p></div>
     </footer>
   {% endblock %}
 {% endif %}

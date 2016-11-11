@@ -1,3 +1,82 @@
-#block-customerspecificpricing {
+footer {
+  background-color: #3f4856;
+  color: #ffffff;
+  text-align: center;
+  height: 300px;
+}
+footer #block-iunfi-footer ul li {
+  display: inline-block;
+  border-left: 1px solid #ffffff;
+}
+footer #block-iunfi-footer ul li a {
+  color: #ffffff;
+}
+footer #block-iunfi-footer ul li:first-child {
+  border-left: none;
+}
+footer #block-iunfi-footer .contextual-links li a {
+  color: black;
+}
+footer #copyright-year {
+  margin-top: 20px;
+}
+section.block-1col {
+  padding: 30px;
+}
+section.block-1col div {
+  display: inline;
+}
+section.block-1col li {
+  padding-bottom: 20px;
+}
+section.block-1col .img-div {
+  padding: 15px;
+}
+#block-homepagecustomerspecificpricing {
   background-color: #81c341;
+  color: #ffffff;
+}
+#block-homepagecustomerspecificpricing .text-div {
+  width: 75%;
+}
+#block-homepagedirectvendorblock .text-div,
+#block-deviceoptionsheader .text-div,
+#block-getstartedletsgetstarted .text-div {
+  width: 65%;
+}
+#block-monthlypromosspecials .text-div {
+  width: 65%;
+}
+#block-homepage247support {
+  background-color: #6e6259;
+  color: #ffffff;
+  padding: 20px;
+}
+#block-homepage247support .left-div {
+  width: 50%;
+  float: left;
+}
+#block-homepage247support .right-div {
+  float: right;
+}
+#block-homepage247support .right-div div {
+  float: none;
+  height: 50px;
+  width: 280px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+}
+#block-homepage247support .right-div a {
+  color: #6e6259;
+  text-align: center;
+  margin: 0 auto;
+}
+#block-getstartedtoday {
+  text-align: center;
+  margin: 50px 0 20px 0;
+  padding: 0 80px;
+}
+#block-getstartedtoday h2 {
+  padding-bottom: 15px;
 }
