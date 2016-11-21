@@ -18,3 +18,15 @@ bootstrap-scripts:
     bootstrap/js/scrollspy.js: {}
     bootstrap/js/tab.js: {}
     bootstrap/js/transition.js: {}
+
+modal-video:
+  js:
+    js/modal-video.js: {}
+  dependencies:
+    -  core/jquery
+    
+support-topics-common-questions:
+  js:
+    js/support-topics-common-questions.js: {}
+  dependencies:
+    -  core/jquery

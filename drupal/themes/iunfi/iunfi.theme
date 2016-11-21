@@ -37,4 +37,48 @@ if(isset($variables['menu_name']) && $variables['menu_name'] == 'footer') {
   //$variables['attributes']['class'] = array('list-inline');
 }  
   
+}
+*/
+function iunfi_preprocess_views_view_fields(&$variables){
+  $view = $variables['view'];
+  $id = $view->storage->id();
+
+  if($id == 'support_videos'){
+    
+    //ddl($variables['row']->_entity->field_video_info);
+    $orig_vid_info = $variables['fields']['field_video_info']->content;
+    $orig_vid_info = trim(preg_replace('/<!--(.*)-->/Uis', '', $orig_vid_info));
+    $img_src_before = preg_match( '@src="([^"]+)"@' , $orig_vid_info, $match );
+    $img_src = array_pop($match);
+    $img_src = preg_replace('/\?.*/', '', $img_src);
+    $img_arr = explode('/', $img_src);
+    $img_file = end($img_arr);
+    $img_id = str_replace('.jpg', '', $img_file);
+    
+    $variables['video_id'] = $img_id;
+    
+  }
+  
+}
+/*function iunfi_preprocess_views_view(&$variables) {
+  $view = $variables['view'];
+  $id = $view->storage->id();
 }*/
+
+function iunfi_preprocess_page(&$variables) {
+  
+  if (!empty($variables['node']) && $variables['node']->id() == '5') {
+    $variables['#attached']['library'][] = 'iunfi/modal-video';
+    $variables['#attached']['library'][] = 'iunfi/support-topics-common-questions';
+  }
+  //ddl($variables['node']->id());
+  
+  /*
+  // get current node id (current url node id)
+  $node = \Drupal::routeMatch()->getParameter('node');
+  $this_nid = $node->id();
+  */
+  
+  
+}
+

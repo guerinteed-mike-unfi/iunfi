@@ -20,6 +20,20 @@ footer #block-iunfi-footer .contextual-links li a {
 footer #copyright-year {
   margin-top: 20px;
 }
+/*
+#twocol-left-wrapper {
+  padding-right: 15px;
+}
+
+#twocol-right-wrapper {
+  padding-left: 15px;
+}
+*/
+#twocol-wrapper,
+#threecol-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 section.block-1col {
   padding: 30px;
 }
@@ -31,6 +45,34 @@ section.block-1col li {
 }
 section.block-1col .img-div {
   padding: 15px;
+}
+#home-always-fresh {
+  height: 375px;
+  margin-top: 50px;
+  color: #ffffff;
+}
+#home-always-fresh #home-always-fresh-text {
+  text-align: center;
+  padding: 60px 400px 20px 20px;
+}
+#home-always-fresh #home-always-fresh-text #home-always-fresh-ios,
+#home-always-fresh #home-always-fresh-text #home-always-fresh-android {
+  display: inline-block;
+  margin-top: 30px;
+}
+#home-always-fresh #home-always-fresh-text #home-always-fresh-ios a,
+#home-always-fresh #home-always-fresh-text #home-always-fresh-android a {
+  color: #ffffff;
+}
+#home-always-fresh #home-always-fresh-text #home-always-fresh-ios p,
+#home-always-fresh #home-always-fresh-text #home-always-fresh-android p {
+  margin-top: 30px;
+}
+#home-always-fresh #home-always-fresh-text #home-always-fresh-ios {
+  margin-right: 15px;
+}
+#home-always-fresh #home-always-fresh-text #home-always-fresh-android {
+  margin-left: 15px;
 }
 #block-homepagecustomerspecificpricing {
   background-color: #81c341;
@@ -79,4 +121,93 @@ section.block-1col .img-div {
 }
 #block-getstartedtoday h2 {
   padding-bottom: 15px;
+}
+section.block-third-col .img-responsive {
+  display: block;
+  margin: 0 auto;
+}
+section.block-third-col .third-col-header-text h3 {
+  margin: 20px 5px;
+}
+section.block-third-col .third-col-body ul {
+  padding: 0 20px;
+}
+#block-deviceoptionsbyod #device-options-byod-imgs {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#block-deviceoptionsbyod #device-options-byod-imgs img {
+  vertical-align: middle;
+}
+#block-deviceoptionsbyod #device-options-byod-imgs #device-options-ios {
+  padding-right: 10px;
+}
+#block-deviceoptionsbyod #device-options-byod-imgs #device-options-android {
+  padding-left: 30px;
+}
+#device-options-buy-btn,
+#request-username {
+  width: 320px;
+  height: 50px;
+  background-color: #0091da;
+}
+#device-options-buy-btn p,
+#request-username p {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-byod {
+  margin-bottom: 20px;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-byod #device-options-step2-byod-text {
+  float: right;
+  width: 75%;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-devices {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-devices img {
+  vertical-align: middle;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-devices #device-options-step2-img-left {
+  padding-right: 25px;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-devices #device-options-step2-img-right {
+  padding-left: 25px;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-buy {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 0;
+  text-align: center;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-buy #device-options-step2-buy-text {
+  float: right;
+  width: 75%;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-buy-now {
+  width: 320px;
+  height: 50px;
+  background-color: #0091da;
+}
+#block-getstartedstep2 .third-col-body #device-options-step2-buy-now p {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.half-col-wrapper .half-col-header-wrapper .half-col-image {
+  float: right;
+  padding-right: 15px;
+  margin: 0 15px 15px 15px;
+}
+.half-col-wrapper .half-col-header-wrapper .half-col-image img {
+  height: 125px;
+  width: 125px;
 }
