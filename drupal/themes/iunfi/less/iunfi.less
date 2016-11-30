@@ -1,227 +1,1072 @@
-// variables ///////////////////////////////
+// iUNFI fonts
+@import 'MyFontsWebfontsKit.less';
 
-@block-padding: 30px;
-@brown: #6e6259;
+// Bootstrap library.
+@import 'bootstrap';
 
-////////////////////////////////////////////
+// Base-theme overrides.
+@import 'overrides';
 
-@import 'iunfi-menus';
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 
-/*
-#twocol-left-wrapper {
-  padding-right: 15px;
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
 }
 
-#twocol-right-wrapper {
-  padding-left: 15px;
-}
-*/
-
-#twocol-wrapper, #threecol-wrapper {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-section.block-1col {
-  padding: @block-padding;
-  div {
-    display:inline;
-  }
-  li {
-    padding-bottom: 20px;
-  }
-  .img-div {
-    padding: 15px; 
-  }
-}
-
-#home-always-fresh {
-  height: 375px;
-  margin-top:50px;
-  color: #ffffff;
-  #home-always-fresh-text {
+footer {
+  background-color: @unfi-charcoal-blue;
+  text-align: center;
+  ul li {
     text-align: center;
-    padding: 60px 400px 20px 20px;
-    #home-always-fresh-ios, #home-always-fresh-android {
-      display: inline-block;
-      margin-top:30px;
-      a {
-        color: #ffffff;
-      }
-      p {
-        margin-top: 30px;
-      }
+  }
+  a {
+    color: #ffffff;
+  }
+  #copyright-year {
+    margin-top: 15px;
+    p {
+      color: #ffffff;
     }
-    #home-always-fresh-ios {
-      margin-right: 15px;
-    }
-    #home-always-fresh-android {
-      margin-left: 15px;
+  }
+}
+
+/** HOMEPAGE BEGIN */
+
+#block-homepagealwaysfirstalwaysfresh {
+  margin-top: 15px;
+  color: #ffffff; 
+  .quickedit-field {
+    #home-always-fresh {
+      background-repeat: no-repeat;
+      background-position: -530px 0;
+      padding: 5px;
+      #home-always-fresh-text {
+        h2 {
+          padding-top:15px;
+          padding-right: 30px;
+        }
+        #home-always-fresh-ios, #home-always-fresh-android {
+          display: inline-block;
+          padding-bottom:10px;
+          padding-left:10px;
+          a {
+            color: #ffffff;
+            text-align: left;
+            text-decoration: underline;
+            img {
+              max-height: 50px;
+              max-width: 50px;
+              float: left;
+            }
+            span {
+              float: left;
+            }
+          }
+        }
+        #home-always-fresh-android {
+          span {
+            a {
+              padding-top: 5px;
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    } 
+  }
+}
+
+#block-homepagedirectvendorblock, #block-homepagecustomerspecificpricing, #block-monthlypromosspecials {
+  margin-top: 20px;
+  .field--name-field-image-block {
+    img {
+      max-width: 150px;
+      max-height: 150px;
+      margin:0 auto; 
     }
   }
 }
 
 #block-homepagecustomerspecificpricing {
-  background-color: #81c341;
   color: #ffffff;
-  .text-div {
-    width: 75%;  
-  }
-}
-
-#block-homepagedirectvendorblock, #block-deviceoptionsheader, #block-getstartedletsgetstarted {
-  .text-div {
-    width: 65%;  
-  }
-}
-
-#block-monthlypromosspecials {
-  .text-div {
-    width: 65%;  
+  padding: 5px;
+  background-color: @unfi-green;
+  .field--name-field-image-block {
+    img {
+      margin-bottom: 15px;
+    }
   }
 }
 
 #block-homepage247support {
-  background-color: @brown;
+  background-color: @unfi-brown;
   color: #ffffff;
-  padding: 20px;
-  .left-div {
-    width: 50%;
-    float: left;
-  }
+  padding: 5px;
+  text-align: center;
   .right-div {
-    float: right;
     div {
-      float: none;
+      margin: 15px;
+      padding: 15px;
       height: 50px;
-      width: 280px;
+      width: 300px;
       background-color: #ffffff;
-      top: 50%;
-      left: 50%;
-    }
-    a {
-      color: @brown;
+      a {
+        color: @unfi-brown;
+        font-weight: bold;
+      }   
+    } 
+  }
+}
+
+#block-getstartedtoday {
+  margin-top: 15px;
+  text-align: center;
+  padding: 0 30px;
+  div {
+    h2 {
+      color: @unfi-blue;
       text-align: center;
-      margin: 0 auto;
+    }  
+  }
+}
+
+/* HOMEPAGE END **/
+
+/** WHY UNFI BEGIN */
+
+#block-whyiunfitopleftblock {
+  margin-top: 15px;
+  .field--name-body {
+    #why-iunfi-top-div {
+      diplay: inline-block;
+      img {
+        width:50%;
+        height: auto;
+      }
+    }
+    #why-iunfi-bottom-div {
+      img {
+        width: auto;
+        height : auto;
+        max-height: 100%;
+        max-width: 100%;
+      }
     }
   }  
 }
 
-#block-getstartedtoday {
-  text-align: center;  
-  margin: 50px 0 20px 0;
-  padding: 0 80px;
-  h2{
-    padding-bottom: 15px;
+#block-whyiunfitoprightmostadvances {
+  margin-top: 15px;
+  h3 {
+    text-align: left;
+    margin-bottom: 0;
   }
 }
 
-section.block-third-col {
-  .img-responsive {
-    display: block;
-    margin: 0 auto;
+#block-whyiunfidirectvendorordering, #block-whyiunficustomspecificpricing, #block-whyiunfinewdiscounteditems, #block-whyiunfimonthlypromotions {
+   margin-top: 15px;
+   .half-col-wrapper {
+      .half-col-header-wrapper {
+        .half-col-image {
+          .field--name-field-image-block {
+            img {
+              margin: 0 auto;
+            }
+          }
+        } 
+      }
+   }  
+}
+
+#block-whyiunfibottomleftphonegraphic {
+  margin-top: 10px;
+  .field--name-body {
+    ul {
+      text-align: center;
+    }
+    img {
+      width: auto;
+      height : auto;
+      max-height: 100%;
+      max-width: 100%;
+    } 
   }
-  .third-col-header-text h3 {
-    margin: 20px 5px;
-  }
-  .third-col-body ul {
-    padding: 0 20px;
+}
+#block-whyiunficompletefeaturelist {
+  margin-top: 15px;
+  
+  color: #ffffff;
+  background-color: @unfi-green;
+  .half-col-wrapper {
+    padding-bottom: 25px;
+    .half-col-header-wrapper {
+      padding: 10px;
+      border-bottom: 1px solid #ffffff;
+      .half-col-image {
+        .field--name-field-image-block {
+          img {
+            margin: 0 auto;
+          }  
+        }
+      }  
+    }
+    .half-col-body-wrapper {
+      margin-top: 10px;
+      padding: 10px 15px 20px 15px;
+      border-bottom: 1px solid #ffffff;
+      .half-col-body {
+        .field--name-body {
+          .p-indent {
+            padding-left: 25px;  
+          }  
+        }  
+      }
+    }
+  }  
+}
+
+/* WHY UNFI END **/
+
+/** DEVICE OPTIONS BEGIN */
+
+#threecol-wrapper #threecol-left-wrapper, #threecol-wrapper #threecol-center-wrapper, #threecol-wrapper #threecol-right-wrapper {
+  margin: 15px 0;
+}
+
+#block-deviceoptionsheader {
+  margin-top: 15px;
+}
+
+#block-deviceoptionsbyod, #block-deviceoptionsopportunitytoupgrade, #block-deviceoptionsfree {
+  .third-col-image {
+    .field--name-field-image-block {
+      img {
+        margin: 0 auto;
+      }
+    }
   }
 }
 
 #block-deviceoptionsbyod {
-  #device-options-byod-imgs {
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    img {
-      vertical-align: middle;
-    }
-    #device-options-ios {
-      padding-right: 10px;
-    }
-    #device-options-android {
-      padding-left: 30px;
+  .field--name-body {
+    #device-options-byod-imgs {
+      text-align: center;
+      #device-options-ios  {
+        padding-right: 15px;
+      }
+      #device-options-android {
+        padding-left: 15px;
+      }
     }
   }
 }
 
-#device-options-buy-btn, #request-username {
-  width: 320px;
-  height: 50px;
-  background-color: #0091da;
-  p {
-    color: #ffffff;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 15px;
+#block-deviceoptionsopportunitytoupgrade {
+  .third-col-body {
+    .field--name-body {
+      #device-options-buy-btn {
+        margin: 15px;
+        padding: 15px;
+        height: 50px;
+        width: 300px;
+        text-align: center;
+        background-color: @unfi-blue;
+        a {
+          color: #ffffff;
+          font-weight: bold;
+        }
+      }   
+    }  
+  }   
+}
+/* DEVICE OPTIONS END **/
+
+/** GET STARTED BEGIN */
+
+#block-getstarted1username, #block-getstartedstep2, #block-getstartedstep3 {
+  .third-col-image {
+    .field--name-field-image-block {
+      img {
+        margin: 0 auto;
+      }
+    }
+  }   
+}
+
+#block-getstarted1username {
+  .third-col-body {
+    .field--name-body {
+      #request-username {
+        margin: 15px;
+        padding: 15px;
+        height: 50px;
+        width: 300px;
+        text-align: center;
+        background-color: @unfi-blue;
+        a {
+          color: #ffffff;
+          font-weight: bold;
+        }  
+      }    
+    }  
   }
-}  
+}
 
 #block-getstartedstep2 {
+  margin-top: 15px;
   .third-col-body {
-    #device-options-step2-byod {
-      margin-bottom: 20px;
+    .field--name-body {
+      #device-options-step2-byod, #device-options-step2-buy {
+        img {
+          float: left;
+          margin-right: 10px;
+        }
+      }
       #device-options-step2-byod-text {
-        float: right;
-        width: 75%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #device-options-step2-devices {
+        text-align: center;
+        img {
+          display: inline-block;
+          margin: 0 auto;
+          padding-bottom: 10px;
+        }
+        #device-options-step2-img-left {
+          margin-right: 10px;
+        }
+        #device-options-step2-img-right {
+          margin-left: 10px;
+        }  
+      }
+      #device-options-step2-buy-now {
+        margin: 15px;
+        padding: 15px;
+        height: 50px;
+        width: 300px;
+        text-align: center;
+        background-color: @unfi-blue;
+        a {
+          color: #ffffff;
+          font-weight: bold;
+        }    
       }
     }
-    #device-options-step2-devices {
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      img {
-        vertical-align: middle;
+  }
+}
+
+/* GET STARTED END **/
+
+/** SUPPORT BEGIN */
+
+#block-views-block-support-topics-block-1, #block-views-block-common-questions-block-1 {
+  .filter-section {
+    margin: 5px 0 15px 0;
+  }
+  .form-group {
+    .view {
+      .contextual {
+        .view-header {
+          font-weight: bold;
+        }
       }
-      #device-options-step2-img-left {
-        padding-right: 25px;
+      .view-content {
+        .views-row {
+          ul {
+            li {
+              span {
+                margin-left: 5px;
+                img {
+                  margin-top: -5px;
+                } 
+              }  
+            }
+          }
+        }
       }
-      #device-options-step2-img-right {
-        padding-left: 25px;
+    }
+  } 
+} 
+
+#block-views-block-common-questions-block-1 {
+  .form-group {
+    .contextual-region {
+      .view-header {
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+    }
+  } 
+}
+
+#block-views-block-support-videos-block-1 {
+  .form-group {
+    .view-support-videos {
+      .view-content {
+        .views-row {
+          text-align:center;
+          margin-bottom: 15px;
+          .views-field-field-video-info {
+            margin: 0 auto;
+            img {
+              display: inline;
+              margin-bottom: 5px;
+            }  
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+/* SUPPORT END **/
+
+/*--------------------------------------------------------*/
+/*
+ * Small devices (tablets, 768px and up)
+ * ipad
+ */
+@media (min-width: @screen-sm-min) {
+  
+  h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+  }
+  
+  footer {
+    .region-footer {
+      margin-bottom: 30px;
+      nav {
+        ul {
+          text-align: center;
+          li {
+            display: inline;
+            border-right: 1px solid #ffffff;
+            a {
+              display: inline;
+              height: inherit;
+            }
+          }
+          li:last-child {
+            border: none;
+          }  
+        }
+      }
+    }
+  }
+
+  /** HOMEPAGE START */
+
+  #block-homepagealwaysfirstalwaysfresh {
+    .quickedit-field {
+      #home-always-fresh {
+        h2 {
+          text-align: center;
+        }
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-repeat: no-repeat;
+        background-position: -300px 0;
+        #home-always-fresh-text {
+          padding-right: 200px;
+          h2 {
+            padding:15px 30px 15px 0;
+          }
+          #home-always-fresh-ios, #home-always-fresh-android {
+            display: inline-block;
+            padding-bottom:10px;
+            width: 40%;
+            margin: 0 auto;
+            a {
+              text-align: center;
+              display: block;
+              img {
+                float: none;
+                clear: both;
+              }
+            }
+          }
+          #home-always-fresh-android {
+            span {
+              a {
+                padding-top: 5px;
+                display: block;
+              }
+            }
+          }
+        }
       } 
     }
-    #device-options-step2-buy {
-      margin-bottom: 20px;
-      margin-top: 20px;
-      padding: 0;
-      text-align: center;
-      #device-options-step2-buy-text {
-        float: right;
-        width: 75%; 
-      }
-    }
-    #device-options-step2-buy-now {
-      width: 320px;
-      height: 50px;
-      background-color: #0091da;
-      p {
-        color: #ffffff;
-        text-align: center;
-        font-weight: bold;
-        padding-top: 15px;
-      }
-    }
   }
-}
 
-.half-col-wrapper {
-  .half-col-header-wrapper {
-    .half-col-image {
+  #block-homepagedirectvendorblock, #block-monthlypromosspecials {
+    .img-div {
+      float: left;
+      .field--name-field-image-block {
+        img {
+          margin-top: 35px;
+        }  
+      }
+    }
+    .text-div {
       float: right;
-      padding-right: 15px;
-      margin: 0 15px 15px 15px;
-      img {
-        height: 125px;
-        width: 125px; 
+      width: 75%;
+    }
+  }
+
+  #block-monthlypromosspecials {
+    .img-div {
+      .field--name-field-image-block {
+        img {
+          margin-top: 100px;
+        }  
       }
     }
-    
   }
-}
+
+  #block-homepagecustomerspecificpricing {
+    padding: 0 15px;
+    .img-div {
+      float: right;
+      .field--name-field-image-block {
+        img {
+          margin-top: 45px;
+        }  
+      }
+    }
+    .text-div {
+      float: left;
+      width: 75%;
+    }
+  }
+
+  #block-homepage247support {
+    padding: 15px;
+    margin-top: 15px;
+    .field--name-body {
+      .left-div {
+        float: left;
+        width: 60%;
+        p{
+          text-align: left;
+          margin: 0;
+        }
+      }
+      .right-div {
+        float: right;
+        width: 40%;
+        text-align: center;
+        div {
+          width: 200px;
+          margin-top: 50px;
+        } 
+      }
+    }
+  }
+
+  /* HOMEPAGE END **/  
+
+  /** WHY IUNFI START */  
+
+  #block-whyiunfitopleftblock {
+    .field--name-body {
+      #why-iunfi-bottom-div {
+        img {
+          width: 100%;
+          height : auto;
+          margin-top: -2px;
+        }
+      }
+    }  
+  }
+
+  #block-whyiunfitoprightmostadvances {
+    margin-top: 0;
+  }
+    
+  /* WHY IUNFI END **/
+
+  /** DEVICE OPTIONS START */
+
+  #block-deviceoptionsheader {
+    .img-div {
+      .field--name-field-image-block {
+        img {
+          width: 100%;
+          height: auto;
+        }  
+      }
+    }
+  }
+
+  #block-deviceoptionsbyod, #block-deviceoptionsopportunitytoupgrade, #block-deviceoptionsfree {
+    .third-col-image {
+      float: left;
+      padding-top: 30px;
+      .field--name-field-image-block {
+        img {
+          width: 80%;
+        }
+      } 
+    }
+    .third-col-header-text, .third-col-body {
+      float: right;
+      width: 75%;
+    } 
+  }
+    
+  /* DEVICE OPTIONS END **/
+
+  /** GET STARTED BEGIN */
+
+  #block-getstartedletsgetstarted {
+    .img-div {
+      .field--name-field-image-block {
+        img {
+          width: 100%;
+          height: auto;
+        }  
+      }
+    }
+  }
+
+  #block-getstarted1username, #block-getstartedstep2, #block-getstartedstep3 {
+    .third-col-image {
+      float: left;
+      padding-top: 15px;
+      .field--name-field-image-block {
+        img {
+          width: 80%;
+        }
+      } 
+    }
+    .third-col-header-text, .third-col-body {
+      float: right;
+      width: 80%;
+    } 
+  }
+
+  #block-getstarted1username {
+    .third-col-body {
+      .field--name-body {
+        #request-username {
+          margin: 0 auto;
+        }
+      }
+    } 
+  }
+
+  #block-getstartedstep2 {
+    .third-col-body {
+      .field--name-body {
+        #device-options-step2-byod {
+          #device-options-step2-byod-text {
+            p {
+              padding-top: 20px;
+            } 
+          } 
+        }
+        #device-options-step2-devices {
+          #device-options-step2-img-left {
+            margin-right: 30px;
+          }
+          #device-options-step2-img-right {
+            margin-left: 30px;
+          }
+        }
+        #device-options-step2-buy {
+          p {
+            padding-top: 20px;
+          }
+        }
+        #device-options-step2-buy-now {
+          margin: 10px auto 0 auto;
+        }   
+      }   
+    }   
+  }
+
+  /* GET STARTED END **/
+  
+  /** SUPPORT BEGIN */
+
+  #block-views-block-support-videos-block-1 {
+    .form-group {
+      .view-display-id-block_1 {
+        margin: 0 auto;
+        .view-content {
+          text-align: center;
+          .views-row {
+            width: 150px;
+            padding: 0 15px;
+            width: 150px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  /* SUPPORT END **/
+ 
+} // end @media (min-width: @screen-lg-min)
 
 
+/*--------------------------------------------------------*/
+/*
+ * Medium devices (desktops, 992px and up)
+ */
+@media (min-width: @screen-md-min) {
+
+  /** HOMEPAGE START */
+
+  #block-homepagealwaysfirstalwaysfresh {
+    .quickedit-field {
+      #home-always-fresh {
+        background-position: -125px 0;
+        height: 300px;
+        #home-always-fresh-text {
+          text-align: center;
+          padding-right: 300px;
+          #home-always-fresh-ios, #home-always-fresh-android {
+            width: 32%;
+            display: inline-block;
+          }
+        }
+      } 
+    }
+  }
+  
+  #block-homepagedirectvendorblock, #block-homepagecustomerspecificpricing, #block-monthlypromosspecials, #block-homepage247support, #block-getstartedtoday {
+    padding: 0 30px;
+  }
+  
+  #block-homepagedirectvendorblock {
+    .img-div {
+      .field--name-field-image-block {
+        img {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  
+  #block-homepagecustomerspecificpricing {
+    padding: 15px 30px 25px 25px;
+    .img-div {
+      .field--name-field-image-block {
+        img {
+          margin-top: 20px;
+          max-width: 175px;
+          max-height: 175px;
+        }
+      }
+    }
+  }
+  
+  #block-monthlypromosspecials {
+    .img-div {
+      .field--name-field-image-block {
+        img {
+          margin-top: 60px;
+          max-width: 200px;
+          max-height: 200px;
+        }
+      }
+    }  
+  }
+  
+  #block-homepage247support {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    .field--name-body {
+      .right-div {
+        div {
+          margin: 50px auto 0 auto;
+        }
+      }
+    } 
+  }
+  
+  #block-getstartedtoday {
+    padding: 10px 60px;
+  }
+  
+  /* HOMEPAGE END **/
+  
+  /** DEVICE OPTIONS START */
+  
+  #block-deviceoptionsheader {
+    margin-top: 15px;
+    .img-div {
+      width: 45%;
+      margin-right: 15px;  
+      display: inline-block;
+      vertical-align: top;
+    }
+    .text-div {
+      width: 45%;
+      margin-left: 15px;
+      display: inline-block;
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+  
+  #block-deviceoptionsbyod, #block-deviceoptionsopportunitytoupgrade, #block-deviceoptionsfree {
+    .third-col-image {
+      float: none;
+      padding-top: 15px;
+      .field--name-field-image-block {
+        img {
+          margin: 0 auto;
+          width: 140px;
+          height: auto;
+        }  
+      }
+    }
+    .third-col-header-text {
+      float: none;
+      width: 100%;
+      h3 {
+        text-align: center;
+      }
+    }
+    .third-col-body {
+      float: none;
+      width: 100%;
+      .field--name-body {
+        ul {
+          li {
+            margin: 15px; 
+          }
+        }
+      } 
+    }
+  }
+  
+  #block-deviceoptionsopportunitytoupgrade {
+    .third-col-body {
+      .field--name-body {
+        #device-options-buy-btn {
+          width: inherit;
+        }   
+      }  
+    }   
+  }
+  
+  /* DEVICE OPTIONS END **/  
+  
+  /** GETTING STARTED BEGIN */ 
+  
+  #block-getstartedletsgetstarted {
+    margin-top: 15px;
+    .img-div {
+      width: 45%;
+      margin-right: 15px;  
+      display: inline-block;
+      vertical-align: top;
+    }
+    .text-div {
+      width: 45%;
+      margin-left: 15px;
+      display: inline-block;
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+  
+  #block-getstarted1username, #block-getstartedstep2, #block-getstartedstep3 {
+    margin-top: 5px;
+    padding: 0 10px;
+    .third-col-image {
+      float: none;
+      margin-bottom: 10px;
+      .field--name-field-image-block {
+        img {
+          height: 140px;
+          width: auto;
+        }
+      }
+    }
+    .third-col-header-text, .third-col-body {
+      float: none;
+      width: 100%;
+    }
+    .third-col-header-text {
+      h3 {
+        margin: 35px 0 25px 0;
+        
+      }
+    }
+  }
+  
+  #block-getstarted1username {
+    .third-col-body {
+      .field--name-body {
+        #request-username {
+          width: 100%;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  
+  #block-getstartedstep2 {
+    .third-col-body {
+      .field--name-body {
+        #device-options-step2-byod {
+          #device-options-step2-byod-text {
+            p {
+              padding-top: 0;
+            }
+          }
+        }
+        #device-options-step2-buy {
+          margin-top: 25px;
+          #device-options-step2-buy-text {
+            p {
+              padding-top: 0;
+            }
+          }
+        }
+        #device-options-step2-buy-now {
+          width: 100%;
+        } 
+      }
+    }
+  }
+  
+  /* GETTING STARTED END **/ 
+    
+  
+} // END Medium devices (desktops, 992px and up)
+
+/*--------------------------------------------------------*/
+/*
+ * Large devices (large desktops, 1200px and up)
+ */
+@media (min-width: @screen-lg-min) {
+  
+  /** HOME PAGE BEGIN */
+  
+  #block-homepagealwaysfirstalwaysfresh {
+    .field--name-body {
+      #home-always-fresh {
+        background-position: 0 0;
+        background-size: contain;
+        height: 375px;
+        #home-always-fresh-text {
+          padding-right: 375px;
+          h2 {
+            padding-right: 0;
+          }
+          #home-always-fresh-ios, #home-always-fresh-android {
+            width: 30%;
+            a {
+              img {
+                max-height: 100px;
+                max-width: 100px;
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }   
+  }
+  
+  #block-homepagedirectvendorblock {
+    .img-div {
+      .field--name-field-image-block {
+        img {
+          max-height: 200px;
+          max-width: 200px;
+        } 
+      }
+    }    
+  }
+  
+  #block-homepage247support {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+  }
+  
+  /* HOMEPAGE END **/
+  
+  /** WHY IUNFI BEGIN */
+  
+  #block-whyiunfidirectvendorordering, #block-whyiunficustomspecificpricing, #block-whyiunfinewdiscounteditems, #block-whyiunfimonthlypromotions {
+    margin-top: 30px;
+    .half-col-wrapper {
+      .half-col-header-wrapper {
+        .half-col-image {
+          float: right;
+          img {
+            max-height: 100px;
+            max-width: 100px;
+          }
+        }
+      }
+      .half-col-body-wrapper {
+        .half-col-body {
+          .field--name-body {
+            ul {
+              li {
+                margin: 25px 0;
+              }
+            }
+          } 
+        }
+      }
+    } 
+  }
+  
+  /* WHY IUNFI END **/
+  
+  /** DEVICE OPTIONS BEGIN */
+  
+  #block-deviceoptionsbyod {
+    .third-col-image {
+      .field--name-field-image-block {
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
+  }
+  
+  /* DEVICE OPTIONS END **/
+  
+  /** SUPPORT BEGIN */
+  
+  #block-views-block-support-videos-block-1 {
+    .form-group {
+      .view-id-support_videos {
+        .view-content {
+          text-align: left;
+          .views-row {
+            width: 125px;
+          }
+        }
+      }
+    }      
+  }
+  
+  /* SUPPORT END **/
+  
+
+
+} //end @media (min-width: @screen-lg-min)
+  
 
 
 

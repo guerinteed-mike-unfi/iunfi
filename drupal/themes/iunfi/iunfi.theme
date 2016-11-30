@@ -45,7 +45,6 @@ function iunfi_preprocess_views_view_fields(&$variables){
 
   if($id == 'support_videos'){
     
-    //ddl($variables['row']->_entity->field_video_info);
     $orig_vid_info = $variables['fields']['field_video_info']->content;
     $orig_vid_info = trim(preg_replace('/<!--(.*)-->/Uis', '', $orig_vid_info));
     $img_src_before = preg_match( '@src="([^"]+)"@' , $orig_vid_info, $match );
@@ -54,16 +53,33 @@ function iunfi_preprocess_views_view_fields(&$variables){
     $img_arr = explode('/', $img_src);
     $img_file = end($img_arr);
     $img_id = str_replace('.jpg', '', $img_file);
-    
+
     $variables['video_id'] = $img_id;
-    
   }
-  
-}
+} 
+
+
 /*function iunfi_preprocess_views_view(&$variables) {
   $view = $variables['view'];
   $id = $view->storage->id();
 }*/
+
+function iunfi_preprocess_views_view_field(&$variables){
+  $view = $variables['view'];
+  $id = $view->storage->id();
+
+  if($id == 'support_videos'){
+    $field = $variables['row']->_entity->get('field_video_info')->getValue();
+    $orig_vid_info = $field[0]['value'];
+    $query_only = parse_url($orig_vid_info, PHP_URL_QUERY);
+    $query_arr = explode('=', $query_only);
+    
+    if(isset($query_arr[1])) {
+      $variables['video_id'] = $query_arr[1];
+    }
+  }
+  
+}
 
 function iunfi_preprocess_page(&$variables) {
   

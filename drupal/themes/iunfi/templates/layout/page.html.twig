@@ -158,11 +158,11 @@
           {% endblock %}
         {% endif %}
         
-        {# 2 column section #}
+        {# 2 column section - 4 rows #}
         {% if page.twocol_left or page.twocol_right %}
           <div id="twocol-wrapper" class="row">
             
-            <div id="twocol-left-wrapper" class="col-md-6 col-xs-6 col-sm-6">
+            <div id="twocol-left-wrapper" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
               {# twocol_left #}
               {% if page.twocol_left %}
                 {% block twocol_left %}
@@ -171,7 +171,7 @@
               {% endif %}  
             </div>
             
-            <div id="twocol-right-wrapper" class="col-md-6 col-xs-6">
+            <div id="twocol-right-wrapper" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
               {# twocol_right #}
               {% if page.twocol_right %}
                 {% block twocol_right %}
@@ -184,25 +184,101 @@
           </div>
         {% endif %}
         
+        {% if page.twocol_left_2 or page.twocol_right_2 %}
+          <div id="twocol-wrapper-2" class="row">
+            
+            <div id="twocol-left-wrapper_2" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              {# twocol_left_2 #}
+              {% if page.twocol_left_2 %}
+                {% block twocol_left_2 %}
+                  {{ page.twocol_left_2 }}
+                {% endblock %}
+              {% endif %}  
+            </div>
+            
+            <div id="twocol-right-wrapper_2" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              {# twocol_right_2 #}
+              {% if page.twocol_right_2 %}
+                {% block twocol_right_2 %}
+                  {{ page.twocol_right_2 }}
+                {% endblock %}
+              {% endif %} 
+            </div> 
+            
+            <div class="clearfix visible-xs-block"></div>
+          </div>
+        {% endif %}
+        
+        {% if page.twocol_left_3 or page.twocol_right_3 %}
+          <div id="twocol-wrapper-3" class="row">
+            
+            <div id="twocol-left-wrapper_3" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              {# twocol_left_3 #}
+              {% if page.twocol_left_3 %}
+                {% block twocol_left_3 %}
+                  {{ page.twocol_left_3 }}
+                {% endblock %}
+              {% endif %}  
+            </div>
+            
+            <div id="twocol-right-wrapper_3" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              {# twocol_right_3 #}
+              {% if page.twocol_right_3 %}
+                {% block twocol_right_3 %}
+                  {{ page.twocol_right_3 }}
+                {% endblock %}
+              {% endif %} 
+            </div> 
+            
+            <div class="clearfix visible-xs-block"></div>
+          </div>
+        {% endif %}
+        
+        {% if page.twocol_left_4 or page.twocol_right_4 %}
+          <div id="twocol-wrapper-4" class="row">
+            
+            <div id="twocol-left-wrapper_4" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              {# twocol_left_4 #}
+              {% if page.twocol_left_4 %}
+                {% block twocol_left_4 %}
+                  {{ page.twocol_left_4 }}
+                {% endblock %}
+              {% endif %}  
+            </div>
+            
+            <div id="twocol-right-wrapper_4" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+              {# twocol_right_4 #}
+              {% if page.twocol_right_4 %}
+                {% block twocol_right_4 %}
+                  {{ page.twocol_right_4 }}
+                {% endblock %}
+              {% endif %} 
+            </div> 
+            
+            <div class="clearfix visible-xs-block"></div>
+          </div>
+        {% endif %}
+        
         {# 3 column section #}
         {% if page.threecol_left or page.threecol_center or page.threecol_right %}
           <div id="threecol-wrapper" class="row">
             
-            <div id="threecol-left-wrapper" class="col-xs-6 col-sm-4">
+            <!--<div id="threecol-left-wrapper" class="col-xs-12 col-sm-4">-->
+            <div id="threecol-left-wrapper" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
               {# threecol_left #}
               {% if page.threecol_left %}
                 {{ page.threecol_left }}
               {% endif %}  
             </div>
             
-            <div id="threecol-center-wrapper" class="col-xs-6 col-sm-4">
+            <div id="threecol-center-wrapper" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
               {# threecol_center #}
               {% if page.threecol_center %}
                 {{ page.threecol_center }}
               {% endif %}  
             </div>
             
-            <div id="threecol-right-wrapper" class="col-xs-6 col-sm-4">
+            <div id="threecol-right-wrapper" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
               {# threecol_right #}
               {% if page.threecol_right %}
                 {{ page.threecol_right }}

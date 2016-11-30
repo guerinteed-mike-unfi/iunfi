@@ -5,5 +5,31 @@
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
 
+//** Global textual link color.
+@link-color: #0091da;
+
+
 // Set the proper directory for the Bootstrap Glyphicon font.
 @icon-font-path: '../bootstrap/fonts/';
+
+//== Typography
+//
+
+//## Font, line-height, and color for body text, headings, and more.
+@font-family-sans-serif:  FFDINWeb, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    FFDINWebMedium;
+
+@font-size-h1:            floor((@font-size-base * 3.5)); // ~49px
+@font-size-h2:            floor((@font-size-base * 3)); // ~42px
+@font-size-h3:            ceil((@font-size-base * 2.5)); // ~35px
+
+//** Global text color on `<body>`.
+@text-color:            #636363;
+
+@unfi-green:  #81be41;
+@unfi-brown:  #6e6259;
+@unfi-blue: #0091da;
+@unfi-charcoal-blue: #3f4856;

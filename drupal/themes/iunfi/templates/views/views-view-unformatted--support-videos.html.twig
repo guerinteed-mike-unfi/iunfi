@@ -20,7 +20,7 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-<ul class="support_videos_list">
+{# <ul class="support_videos_list"> #}
 {% for row in rows %}
   {%
     set row_classes = [
@@ -31,4 +31,4 @@
     {{ row.content }}
   </div>
 {% endfor %}
-</ul>
+{# </ul> #}

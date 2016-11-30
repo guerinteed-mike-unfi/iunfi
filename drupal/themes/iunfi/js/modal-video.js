@@ -1,6 +1,3 @@
-
-
-
 jQuery("a.support-video-click").click(function() {
   
   theModal = jQuery(this).attr("data-target");
@@ -11,6 +8,5 @@ jQuery("a.support-video-click").click(function() {
   jQuery(theModal + ' button.close').click(function () {
       jQuery(theModal + ' iframe').attr('src', videoSRC);
   });
-  
   
 });

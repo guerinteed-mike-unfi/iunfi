@@ -1,6 +1,11 @@
 {% spaceless %}
 <li class="{{ row._entity.field_device_type.value|clean_class }}">
   <a href="{{ path('entity.node.canonical', {'node': row._entity.nid.value}) }}">{{ row._entity.field_display_title.value }}</a>
-  <span>{{ row._entity.field_device_type.value|trim }}</span>
+  {% if row._entity.field_device_type.value|trim|lower == 'apple' or row._entity.field_device_type.value|trim|lower == 'both' %}
+    <span class="{{ row._entity.field_device_type.value|trim|lower }}"><img src="/themes/iunfi/images/apple-filter.png"></span>
+  {% endif %}
+  {% if row._entity.field_device_type.value|trim|lower == 'android' or row._entity.field_device_type.value|trim|lower == 'both' %}
+    <span class="{{ row._entity.field_device_type.value|trim|lower }}"><img src="/themes/iunfi/images/android-filter.png"></span>
+  {% endif %}
 </li>
 {% endspaceless %}

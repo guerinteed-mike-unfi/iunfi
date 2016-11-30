@@ -60,10 +60,12 @@
   {% endif %}
   {{ title_suffix }}
   
-  <div id="support-topics-filter">
-    <li filter="apple"><img src="{{ base_path ~ directory }}/images/ios-blue-apple-filter-support.png" alt="Filter by iOS" /></li>
-    <li filter="android"><img src="{{ base_path ~ directory }}/images/android-blue-robot-filter-support.png" alt="Filter by Android" /></li>
-    <li filter="both">show all</li>
+  <div id="support-topics-filter" class="filter-section">
+    <ul class="list-unstyled list-inline">
+      <li filter="apple" filter-target="#support-topics"><img src="/themes/iunfi/images/ios-blue-apple-filter-support.png" alt="Filter by iOS" /></li>
+      <li filter="android" filter-target="#support-topics"><img src="/themes/iunfi/images/android-blue-robot-filter-support.png" alt="Filter by Android" /></li>
+      <li filter="both" filter-target="#support-topics">show all</li>
+    </ul>
   </div>
 
   {% block content %}

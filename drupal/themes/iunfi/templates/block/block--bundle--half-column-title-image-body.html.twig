@@ -54,7 +54,14 @@
     'clearfix',
   ]
 %}
+
 <section{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+
   <div class="half-col-wrapper">
     <div class="half-col-header-wrapper">
       <div class='half-col-image'>
@@ -66,7 +73,7 @@
       <div class="clearfix"></div>
     </div>
     <div class="half-col-body-wrapper">
-      <div class='third-col-body'>
+      <div class='half-col-body'>
         {{ content.body }}
       </div>
     </div>

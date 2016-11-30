@@ -55,7 +55,7 @@
   ]
 %}
 <section{{ attributes.addClass(classes) }}>
-  <div class="pull-left text-div">
+  <div class="text-div">
     {{ title_prefix }}
     {% if label %}
       <h2{{ title_attributes.addClass('block-title') }}>{{ label }}</h2>
@@ -64,7 +64,7 @@
     
     {{ content.body }}
   </div>
-  <div class="pull-right img-div">
+  <div class="img-div">
     {{ content.field_image_block }}
   </div>
 </section>
