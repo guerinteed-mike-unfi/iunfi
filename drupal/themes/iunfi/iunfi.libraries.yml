@@ -1,7 +1,6 @@
 global-styling:
   css:
     theme:
-      #css/style.css: {}
       css/iunfi.css: {}
 
 bootstrap-scripts:
@@ -19,6 +18,11 @@ bootstrap-scripts:
     bootstrap/js/tab.js: {}
     bootstrap/js/transition.js: {}
 
+js-header:
+  header: true
+  js:
+    js/google-analytics.js: {}
+    
 modal-video:
   js:
     js/modal-video.js: {}

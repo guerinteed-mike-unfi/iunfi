@@ -7520,11 +7520,14 @@ ul {
 .popover ul:last-child {
   margin-bottom: 0;
 }
+li {
+  margin: 10px 0;
+}
 .page-header {
   margin-top: 0;
 }
 .footer {
-  margin-top: 45px;
+  margin-top: 15px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5;
@@ -7555,6 +7558,9 @@ p:last-child,
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+body {
+  font-size: 3.8vw;
+}
 h1,
 h2,
 h3,
@@ -7562,10 +7568,22 @@ h4,
 h5,
 h6 {
   text-align: center;
+  letter-spacing: -2px;
+  text-align: left;
+}
+h2 {
+  font-size: 7.5vw;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+h3 {
+  font-size: 6vw;
+  margin-bottom: 0;
 }
 footer {
   background-color: #3f4856;
   text-align: center;
+  height: 500px;
 }
 footer ul li {
   text-align: center;
@@ -7574,129 +7592,121 @@ footer a {
   color: #ffffff;
 }
 footer #copyright-year {
-  margin-top: 15px;
+  margin-top: 75px;
 }
 footer #copyright-year p {
   color: #ffffff;
 }
-/** HOMEPAGE BEGIN */
+.btn {
+  width: 100%;
+  border-radius: 0px;
+  height: 50px;
+}
+.item {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.block {
+  margin: 20px 0;
+}
 #block-homepagealwaysfirstalwaysfresh {
-  margin-top: 15px;
+  background-color: yellow;
+  padding-top: 0;
+  padding-bottom: 10px;
   color: #ffffff;
 }
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh {
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh {
   background-repeat: no-repeat;
   background-position: -530px 0;
-  padding: 5px;
-}
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text h2 {
-  padding-top: 15px;
-  padding-right: 30px;
-}
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-ios,
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android {
-  display: inline-block;
   padding-bottom: 10px;
+}
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text {
+  padding-top: 30px;
   padding-left: 10px;
 }
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-ios a,
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android a {
-  color: #ffffff;
-  text-align: left;
-  text-decoration: underline;
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text h2 {
+  padding-right: 15px;
 }
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-ios a img,
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android a img {
-  max-height: 50px;
-  max-width: 50px;
-  float: left;
-}
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-ios a span,
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android a span {
-  float: left;
-}
-#block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android span a {
-  padding-top: 5px;
-  display: block;
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android {
   width: 100%;
+  margin: 10px 0;
+  clear: both;
+}
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-img,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-img,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-text,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-text {
+  float: left;
+}
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-img a,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-img a,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-text a,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-text a {
+  color: #ffffff;
+  font-family: FFDINWebMedium;
   height: 100%;
+  vertical-align: middle;
 }
-#block-homepagedirectvendorblock,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-img,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-img {
+  margin-right: 15px;
+}
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-text,
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-text {
+  width: 60%;
+  margin: auto 0;
+}
+#block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-android {
+  margin-bottom: 20px;
+}
 #block-homepagecustomerspecificpricing,
-#block-monthlypromosspecials {
-  margin-top: 20px;
+#block-homepage247support {
+  padding: 10px 10px 20px 10px;
+  color: #ffffff;
 }
-#block-homepagedirectvendorblock .field--name-field-image-block img,
-#block-homepagecustomerspecificpricing .field--name-field-image-block img,
-#block-monthlypromosspecials .field--name-field-image-block img {
-  max-width: 150px;
-  max-height: 150px;
+#block-homepagecustomerspecificpricing .img-div,
+#block-homepagedirectvendorblock .img-div,
+#block-monthlypromosspecials .img-div {
+  width: 50%;
+  height: auto;
   margin: 0 auto;
 }
 #block-homepagecustomerspecificpricing {
-  color: #ffffff;
-  padding: 5px;
   background-color: #81be41;
-}
-#block-homepagecustomerspecificpricing .field--name-field-image-block img {
-  margin-bottom: 15px;
 }
 #block-homepage247support {
   background-color: #6e6259;
-  color: #ffffff;
-  padding: 5px;
-  text-align: center;
 }
-#block-homepage247support .right-div div {
-  margin: 15px;
-  padding: 15px;
-  height: 50px;
-  width: 300px;
-  background-color: #ffffff;
+#block-homepage247support .field--name-body .right-div {
+  padding-top: 15px;
 }
-#block-homepage247support .right-div div a {
-  color: #6e6259;
-  font-weight: bold;
+#block-homepage247support .field--name-body .right-div a {
+  font-family: FFDINWebMedium;
 }
 #block-getstartedtoday {
-  margin-top: 15px;
-  text-align: center;
-  padding: 0 30px;
-}
-#block-getstartedtoday div h2 {
-  color: #0091da;
   text-align: center;
 }
-/* HOMEPAGE END **/
-/** WHY UNFI BEGIN */
+#block-getstartedtoday h2 {
+  text-align: center;
+}
 #block-whyiunfitopleftblock {
-  margin-top: 15px;
-}
-#block-whyiunfitopleftblock .field--name-body #why-iunfi-top-div {
-  diplay: inline-block;
+  margin-bottom: 0;
 }
 #block-whyiunfitopleftblock .field--name-body #why-iunfi-top-div img {
+  display: inline;
   width: 50%;
   height: auto;
 }
 #block-whyiunfitopleftblock .field--name-body #why-iunfi-bottom-div img {
-  width: auto;
+  width: 100%;
   height: auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-#block-whyiunfitoprightmostadvances {
-  margin-top: 15px;
-}
-#block-whyiunfitoprightmostadvances h3 {
-  text-align: left;
-  margin-bottom: 0;
-}
-#block-whyiunfidirectvendorordering,
-#block-whyiunficustomspecificpricing,
-#block-whyiunfinewdiscounteditems,
-#block-whyiunfimonthlypromotions {
-  margin-top: 15px;
 }
 #block-whyiunfidirectvendorordering .half-col-wrapper .half-col-header-wrapper .half-col-image .field--name-field-image-block img,
 #block-whyiunficustomspecificpricing .half-col-wrapper .half-col-header-wrapper .half-col-image .field--name-field-image-block img,
@@ -7704,505 +7714,342 @@ footer #copyright-year p {
 #block-whyiunfimonthlypromotions .half-col-wrapper .half-col-header-wrapper .half-col-image .field--name-field-image-block img {
   margin: 0 auto;
 }
-#block-whyiunfibottomleftphonegraphic {
-  margin-top: 10px;
-}
 #block-whyiunfibottomleftphonegraphic .field--name-body ul {
   text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-#block-whyiunfibottomleftphonegraphic .field--name-body img {
-  width: auto;
+#block-whyiunfibottomleftphonegraphic .field--name-body p img {
+  width: 100%;
   height: auto;
-  max-height: 100%;
-  max-width: 100%;
 }
 #block-whyiunficompletefeaturelist {
-  margin-top: 15px;
-  color: #ffffff;
   background-color: #81be41;
+  color: #ffffff;
+  padding: 15px 0;
 }
-#block-whyiunficompletefeaturelist .half-col-wrapper {
-  padding-bottom: 25px;
+#block-whyiunficompletefeaturelist .half-col-wrapper .half-col-header-wrapper .half-col-image {
+  float: right;
+  width: 100px;
 }
-#block-whyiunficompletefeaturelist .half-col-wrapper .half-col-header-wrapper {
-  padding: 10px;
-  border-bottom: 1px solid #ffffff;
-}
-#block-whyiunficompletefeaturelist .half-col-wrapper .half-col-header-wrapper .half-col-image .field--name-field-image-block img {
-  margin: 0 auto;
+#block-whyiunficompletefeaturelist .half-col-wrapper .half-col-header-wrapper .half-col-header-text {
+  padding-left: 10px;
 }
 #block-whyiunficompletefeaturelist .half-col-wrapper .half-col-body-wrapper {
-  margin-top: 10px;
-  padding: 10px 15px 20px 15px;
+  margin: 10px 0;
+  padding: 10px;
+  border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
 }
 #block-whyiunficompletefeaturelist .half-col-wrapper .half-col-body-wrapper .half-col-body .field--name-body .p-indent {
   padding-left: 25px;
 }
-/* WHY UNFI END **/
-/** DEVICE OPTIONS BEGIN */
-#threecol-wrapper #threecol-left-wrapper,
-#threecol-wrapper #threecol-center-wrapper,
-#threecol-wrapper #threecol-right-wrapper {
-  margin: 15px 0;
+#block-deviceoptionsheader .img-div .field--name-field-image-block img {
+  width: 100%;
 }
-#block-deviceoptionsheader {
-  margin-top: 15px;
-}
-#block-deviceoptionsbyod .third-col-image .field--name-field-image-block img,
-#block-deviceoptionsopportunitytoupgrade .third-col-image .field--name-field-image-block img,
-#block-deviceoptionsfree .third-col-image .field--name-field-image-block img {
+#block-deviceoptionsbyod .third-col-image,
+#block-deviceoptionsopportunitytoupgrade .third-col-image,
+#block-deviceoptionsfree .third-col-image {
   margin: 0 auto;
+  width: 40%;
 }
-#block-deviceoptionsbyod .field--name-body #device-options-byod-imgs {
-  text-align: center;
-}
-#block-deviceoptionsbyod .field--name-body #device-options-byod-imgs #device-options-ios {
-  padding-right: 15px;
-}
-#block-deviceoptionsbyod .field--name-body #device-options-byod-imgs #device-options-android {
-  padding-left: 15px;
-}
-#block-deviceoptionsopportunitytoupgrade .third-col-body .field--name-body #device-options-buy-btn {
-  margin: 15px;
-  padding: 15px;
+#block-deviceoptionsbyod .third-col-body .field--name-body div,
+#block-deviceoptionsopportunitytoupgrade .third-col-body .field--name-body div,
+#block-deviceoptionsfree .third-col-body .field--name-body div {
+  margin-top: 20px;
   height: 50px;
-  width: 300px;
-  text-align: center;
+}
+#block-deviceoptionsbyod .third-col-body .field--name-body div a,
+#block-deviceoptionsopportunitytoupgrade .third-col-body .field--name-body div a,
+#block-deviceoptionsfree .third-col-body .field--name-body div a {
   background-color: #0091da;
-}
-#block-deviceoptionsopportunitytoupgrade .third-col-body .field--name-body #device-options-buy-btn a {
+  font-family: FFDINWebMedium;
   color: #ffffff;
-  font-weight: bold;
 }
-/* DEVICE OPTIONS END **/
-/** GET STARTED BEGIN */
+#block-deviceoptionsbyod .third-col-body .field--name-body #device-options-byod-imgs {
+  width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+}
+#block-deviceoptionsbyod .third-col-body .field--name-body #device-options-byod-imgs #device-options-android {
+  float: right;
+}
+#block-deviceoptionsopportunitytoupgrade .third-col-body .field--name-body div {
+  margin-top: 20px;
+  height: 50px;
+}
+#block-deviceoptionsopportunitytoupgrade .third-col-body .field--name-body div a {
+  background-color: #0091da;
+  font-family: FFDINWebMedium;
+  color: #ffffff;
+}
+#block-getstartedletsgetstarted .img-div .field--name-field-image-block img {
+  width: 100%;
+}
 #block-getstarted1username .third-col-image .field--name-field-image-block img,
 #block-getstartedstep2 .third-col-image .field--name-field-image-block img,
 #block-getstartedstep3 .third-col-image .field--name-field-image-block img {
   margin: 0 auto;
 }
-#block-getstarted1username .third-col-body .field--name-body #request-username {
-  margin: 15px;
-  padding: 15px;
-  height: 50px;
-  width: 300px;
-  text-align: center;
+#block-getstarted1username .third-col-body .field--name-body .item a,
+#block-getstartedstep2 .third-col-body .field--name-body .item a {
   background-color: #0091da;
-}
-#block-getstarted1username .third-col-body .field--name-body #request-username a {
+  font-family: FFDINWebMedium;
   color: #ffffff;
-  font-weight: bold;
 }
-#block-getstartedstep2 {
-  margin-top: 15px;
+#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod,
+#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy {
+  margin: 20px 0;
 }
-#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod img,
-#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy img {
-  float: left;
-  margin-right: 10px;
-}
-#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod-text {
-  margin-top: 10px;
-  margin-bottom: 10px;
+#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod div,
+#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy div {
+  float: right;
+  width: 80%;
 }
 #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-devices {
-  text-align: center;
-}
-#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-devices img {
-  display: inline-block;
   margin: 0 auto;
-  padding-bottom: 10px;
-}
-#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-devices #device-options-step2-img-left {
-  margin-right: 10px;
+  width: 50%;
 }
 #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-devices #device-options-step2-img-right {
-  margin-left: 10px;
+  float: right;
 }
-#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy-now {
-  margin: 15px;
-  padding: 15px;
-  height: 50px;
-  width: 300px;
-  text-align: center;
-  background-color: #0091da;
+#block-views-block-support-topics-block-1 h2,
+#block-views-block-common-questions-block-1 h2 {
+  margin-top: 0;
 }
-#block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy-now a {
-  color: #ffffff;
-  font-weight: bold;
-}
-/* GET STARTED END **/
-/** SUPPORT BEGIN */
 #block-views-block-support-topics-block-1 .filter-section,
 #block-views-block-common-questions-block-1 .filter-section {
-  margin: 5px 0 15px 0;
+  margin-bottom: 10px;
 }
 #block-views-block-support-topics-block-1 .form-group .view .contextual .view-header,
 #block-views-block-common-questions-block-1 .form-group .view .contextual .view-header {
-  font-weight: bold;
+  font-family: FFDINWebMedium;
 }
 #block-views-block-support-topics-block-1 .form-group .view .view-content .views-row ul li span,
 #block-views-block-common-questions-block-1 .form-group .view .view-content .views-row ul li span {
-  margin-left: 5px;
+  padding: 0 5px;
 }
 #block-views-block-support-topics-block-1 .form-group .view .view-content .views-row ul li span img,
 #block-views-block-common-questions-block-1 .form-group .view .view-content .views-row ul li span img {
-  margin-top: -5px;
+  margin-top: -2px;
 }
-#block-views-block-common-questions-block-1 .form-group .contextual-region .view-header {
-  font-weight: bold;
-  padding-bottom: 10px;
+#block-views-block-support-videos-block-1 h2 {
+  margin-top: 0;
 }
-#block-views-block-support-videos-block-1 .form-group .view-support-videos .view-content .views-row {
-  text-align: center;
-  margin-bottom: 15px;
-}
-#block-views-block-support-videos-block-1 .form-group .view-support-videos .view-content .views-row .views-field-field-video-info {
+#block-views-block-support-videos-block-1 .form-group .view .view-content {
   margin: 0 auto;
 }
-#block-views-block-support-videos-block-1 .form-group .view-support-videos .view-content .views-row .views-field-field-video-info img {
-  display: inline;
-  margin-bottom: 5px;
+#block-views-block-support-videos-block-1 .form-group .view .view-content .views-row {
+  text-align: center;
+  width: 40%;
+  display: inline-block;
 }
-/* SUPPORT END **/
-/*--------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
 /*
  * Small devices (tablets, 768px and up)
  * ipad
  */
 @media (min-width: 768px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-align: left;
+  body {
+    font-size: 14px;
   }
-  footer .region-footer {
-    margin-bottom: 30px;
+  h2 {
+    font-size: 34px;
   }
-  footer .region-footer nav ul {
-    text-align: center;
+  h3 {
+    font-size: 26px;
   }
-  footer .region-footer nav ul li {
-    display: inline;
-    border-right: 1px solid #ffffff;
-  }
-  footer .region-footer nav ul li a {
-    display: inline;
-    height: inherit;
-  }
-  footer .region-footer nav ul li:last-child {
-    border: none;
-  }
-  /** HOMEPAGE START */
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh {
-    padding-top: 25px;
-    padding-bottom: 25px;
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh {
     background-repeat: no-repeat;
-    background-position: -300px 0;
-  }
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh h2 {
-    text-align: center;
-  }
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text {
-    padding-right: 200px;
-  }
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text h2 {
-    padding: 15px 30px 15px 0;
-  }
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-ios,
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android {
-    display: inline-block;
+    background-position: -280px 0;
     padding-bottom: 10px;
-    width: 40%;
-    margin: 0 auto;
   }
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-ios a,
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android a {
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text {
+    padding-right: 180px;
+  }
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text h2 {
     text-align: center;
-    display: block;
   }
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-ios a img,
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android a img {
-    float: none;
-    clear: both;
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios,
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android {
+    width: 75%;
+    margin: 20px auto;
+    vertical-align: middle;
   }
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android span a {
-    padding-top: 5px;
-    display: block;
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-text,
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-text {
+    width: 50%;
   }
   #block-homepagedirectvendorblock .img-div,
-  #block-monthlypromosspecials .img-div {
+  #block-monthlypromosspecials .img-div,
+  #block-homepagecustomerspecificpricing .img-div {
     float: left;
+    width: 30%;
+    padding: 0 15px;
   }
   #block-homepagedirectvendorblock .img-div .field--name-field-image-block img,
-  #block-monthlypromosspecials .img-div .field--name-field-image-block img {
-    margin-top: 35px;
+  #block-monthlypromosspecials .img-div .field--name-field-image-block img,
+  #block-homepagecustomerspecificpricing .img-div .field--name-field-image-block img {
+    width: 75%;
+    margin: 10px auto;
   }
   #block-homepagedirectvendorblock .text-div,
-  #block-monthlypromosspecials .text-div {
+  #block-monthlypromosspecials .text-div,
+  #block-homepagecustomerspecificpricing .text-div {
+    width: 70%;
     float: right;
-    width: 75%;
-  }
-  #block-monthlypromosspecials .img-div .field--name-field-image-block img {
-    margin-top: 100px;
-  }
-  #block-homepagecustomerspecificpricing {
-    padding: 0 15px;
+    padding-right: 15px;
   }
   #block-homepagecustomerspecificpricing .img-div {
     float: right;
   }
-  #block-homepagecustomerspecificpricing .img-div .field--name-field-image-block img {
-    margin-top: 45px;
-  }
   #block-homepagecustomerspecificpricing .text-div {
     float: left;
-    width: 75%;
+    padding-left: 15px;
   }
   #block-homepage247support {
-    padding: 15px;
-    margin-top: 15px;
+    padding: 30px;
   }
   #block-homepage247support .field--name-body .left-div {
     float: left;
     width: 60%;
   }
-  #block-homepage247support .field--name-body .left-div p {
-    text-align: left;
-    margin: 0;
-  }
   #block-homepage247support .field--name-body .right-div {
     float: right;
-    width: 40%;
-    text-align: center;
+    width: 30%;
   }
-  #block-homepage247support .field--name-body .right-div div {
-    width: 200px;
-    margin-top: 50px;
+  #block-getstartedtoday {
+    padding: 30px;
   }
-  /* HOMEPAGE END **/
-  /** WHY IUNFI START */
-  #block-whyiunfitopleftblock .field--name-body #why-iunfi-bottom-div img {
-    width: 100%;
-    height: auto;
-    margin-top: -2px;
+  #block-getstartedtoday .field--name-body h2 {
+    padding-bottom: 15px;
   }
-  #block-whyiunfitoprightmostadvances {
+  #block-whyiunfitoprightmostadvances .field--name-body h2 {
     margin-top: 0;
   }
-  /* WHY IUNFI END **/
-  /** DEVICE OPTIONS START */
-  #block-deviceoptionsheader .img-div .field--name-field-image-block img {
-    width: 100%;
-    height: auto;
+  #block-deviceoptionsbyod,
+  #block-deviceoptionsopportunitytoupgrade,
+  #block-deviceoptionsfree {
+    padding: 10px 30px;
   }
   #block-deviceoptionsbyod .third-col-image,
   #block-deviceoptionsopportunitytoupgrade .third-col-image,
   #block-deviceoptionsfree .third-col-image {
-    float: left;
-    padding-top: 30px;
-  }
-  #block-deviceoptionsbyod .third-col-image .field--name-field-image-block img,
-  #block-deviceoptionsopportunitytoupgrade .third-col-image .field--name-field-image-block img,
-  #block-deviceoptionsfree .third-col-image .field--name-field-image-block img {
-    width: 80%;
-  }
-  #block-deviceoptionsbyod .third-col-header-text,
-  #block-deviceoptionsopportunitytoupgrade .third-col-header-text,
-  #block-deviceoptionsfree .third-col-header-text,
-  #block-deviceoptionsbyod .third-col-body,
-  #block-deviceoptionsopportunitytoupgrade .third-col-body,
-  #block-deviceoptionsfree .third-col-body {
-    float: right;
-    width: 75%;
-  }
-  /* DEVICE OPTIONS END **/
-  /** GET STARTED BEGIN */
-  #block-getstartedletsgetstarted .img-div .field--name-field-image-block img {
-    width: 100%;
-    height: auto;
-  }
-  #block-getstarted1username .third-col-image,
-  #block-getstartedstep2 .third-col-image,
-  #block-getstartedstep3 .third-col-image {
-    float: left;
-    padding-top: 15px;
-  }
-  #block-getstarted1username .third-col-image .field--name-field-image-block img,
-  #block-getstartedstep2 .third-col-image .field--name-field-image-block img,
-  #block-getstartedstep3 .third-col-image .field--name-field-image-block img {
-    width: 80%;
-  }
-  #block-getstarted1username .third-col-header-text,
-  #block-getstartedstep2 .third-col-header-text,
-  #block-getstartedstep3 .third-col-header-text,
-  #block-getstarted1username .third-col-body,
-  #block-getstartedstep2 .third-col-body,
-  #block-getstartedstep3 .third-col-body {
-    float: right;
-    width: 80%;
-  }
-  #block-getstarted1username .third-col-body .field--name-body #request-username {
-    margin: 0 auto;
-  }
-  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod #device-options-step2-byod-text p {
-    padding-top: 20px;
-  }
-  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-devices #device-options-step2-img-left {
-    margin-right: 30px;
-  }
-  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-devices #device-options-step2-img-right {
-    margin-left: 30px;
-  }
-  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy p {
-    padding-top: 20px;
-  }
-  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy-now {
-    margin: 10px auto 0 auto;
-  }
-  /* GET STARTED END **/
-  /** SUPPORT BEGIN */
-  #block-views-block-support-videos-block-1 .form-group .view-display-id-block_1 {
-    margin: 0 auto;
-  }
-  #block-views-block-support-videos-block-1 .form-group .view-display-id-block_1 .view-content {
-    text-align: center;
-  }
-  #block-views-block-support-videos-block-1 .form-group .view-display-id-block_1 .view-content .views-row {
-    padding: 0 15px;
-    width: 150px;
-    display: inline-block;
-  }
-  /* SUPPORT END **/
-}
-/*--------------------------------------------------------*/
-/*
- * Medium devices (desktops, 992px and up)
- */
-@media (min-width: 992px) {
-  /** HOMEPAGE START */
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh {
-    background-position: -125px 0;
-    height: 300px;
-  }
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text {
-    text-align: center;
-    padding-right: 300px;
-  }
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-ios,
-  #block-homepagealwaysfirstalwaysfresh .quickedit-field #home-always-fresh #home-always-fresh-text #home-always-fresh-android {
-    width: 32%;
-    display: inline-block;
-  }
-  #block-homepagedirectvendorblock,
-  #block-homepagecustomerspecificpricing,
-  #block-monthlypromosspecials,
-  #block-homepage247support,
-  #block-getstartedtoday {
-    padding: 0 30px;
-  }
-  #block-homepagedirectvendorblock .img-div .field--name-field-image-block img {
-    margin-top: 20px;
-  }
-  #block-homepagecustomerspecificpricing {
-    padding: 15px 30px 25px 25px;
-  }
-  #block-homepagecustomerspecificpricing .img-div .field--name-field-image-block img {
-    margin-top: 20px;
-    max-width: 175px;
-    max-height: 175px;
-  }
-  #block-monthlypromosspecials .img-div .field--name-field-image-block img {
-    margin-top: 60px;
-    max-width: 200px;
-    max-height: 200px;
-  }
-  #block-homepage247support {
-    padding-top: 10px;
-    padding-bottom: 25px;
-  }
-  #block-homepage247support .field--name-body .right-div div {
-    margin: 50px auto 0 auto;
-  }
-  #block-getstartedtoday {
-    padding: 10px 60px;
-  }
-  /* HOMEPAGE END **/
-  /** DEVICE OPTIONS START */
-  #block-deviceoptionsheader {
-    margin-top: 15px;
-  }
-  #block-deviceoptionsheader .img-div {
-    width: 45%;
-    margin-right: 15px;
-    display: inline-block;
-    vertical-align: top;
-  }
-  #block-deviceoptionsheader .text-div {
-    width: 45%;
-    margin-left: 15px;
-    display: inline-block;
-  }
-  #block-deviceoptionsheader .text-div h2 {
-    margin-top: 0;
-  }
-  #block-deviceoptionsbyod .third-col-image,
-  #block-deviceoptionsopportunitytoupgrade .third-col-image,
-  #block-deviceoptionsfree .third-col-image {
-    float: none;
-    padding-top: 15px;
+    height: 125px;
   }
   #block-deviceoptionsbyod .third-col-image .field--name-field-image-block img,
   #block-deviceoptionsopportunitytoupgrade .third-col-image .field--name-field-image-block img,
   #block-deviceoptionsfree .third-col-image .field--name-field-image-block img {
     margin: 0 auto;
-    width: 140px;
-    height: auto;
-  }
-  #block-deviceoptionsbyod .third-col-header-text,
-  #block-deviceoptionsopportunitytoupgrade .third-col-header-text,
-  #block-deviceoptionsfree .third-col-header-text {
-    float: none;
-    width: 100%;
   }
   #block-deviceoptionsbyod .third-col-header-text h3,
   #block-deviceoptionsopportunitytoupgrade .third-col-header-text h3,
   #block-deviceoptionsfree .third-col-header-text h3 {
+    padding-top: 25px;
+  }
+  #block-deviceoptionsbyod .third-col-body .field--name-body #device-options-byod-imgs {
+    width: 30%;
+  }
+  #block-getstarted1username,
+  #block-getstartedstep2,
+  #block-getstartedstep3 {
+    padding: 10px 30px;
     text-align: center;
   }
-  #block-deviceoptionsbyod .third-col-body,
-  #block-deviceoptionsopportunitytoupgrade .third-col-body,
-  #block-deviceoptionsfree .third-col-body {
-    float: none;
+  #block-getstarted1username .third-col-header-text h3,
+  #block-getstartedstep2 .third-col-header-text h3,
+  #block-getstartedstep3 .third-col-header-text h3 {
+    text-align: center;
+  }
+  #block-getstartedstep2 .third-col-body .field--name-body {
+    text-align: left;
+  }
+  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod,
+  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy {
+    width: 60%;
+    margin: 30px  auto;
+  }
+  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-devices {
+    width: 30%;
+  }
+}
+/*---------------------------------------------------------------------------------------------------------*/
+/*
+ * Medium devices (desktops, 992px and up)
+ */
+@media (min-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 34px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh {
+    background-position: -180px 0;
+    padding-bottom: 20px;
+  }
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text {
+    padding-right: 260px;
+    text-align: center;
+  }
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text h2 {
+    padding: 0 80px 25px 30px;
+  }
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios,
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android {
+    width: 40%;
+    margin: 10px auto;
+    display: inline-block;
+  }
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-text,
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-text {
+    text-align: left;
+  }
+  #block-deviceoptionsheader .img-div,
+  #block-deviceoptionsheader .text-div {
+    width: 45%;
+    display: inline-block;
+  }
+  #block-deviceoptionsheader .img-div {
+    float: left;
+  }
+  #block-deviceoptionsheader .text-div {
+    float: right;
+  }
+  #block-deviceoptionsheader .text-div h2 {
+    margin-top: 0;
+  }
+  #block-deviceoptionsbyod,
+  #block-deviceoptionsopportunitytoupgrade,
+  #block-deviceoptionsfree {
+    padding: 0 10px;
+  }
+  #block-deviceoptionsbyod .third-col-image,
+  #block-deviceoptionsopportunitytoupgrade .third-col-image,
+  #block-deviceoptionsfree .third-col-image {
     width: 100%;
   }
-  #block-deviceoptionsbyod .third-col-body .field--name-body ul li,
-  #block-deviceoptionsopportunitytoupgrade .third-col-body .field--name-body ul li,
-  #block-deviceoptionsfree .third-col-body .field--name-body ul li {
-    margin: 15px;
+  #block-deviceoptionsbyod .third-col-body .field--name-body #device-options-byod-imgs {
+    width: 100%;
   }
-  #block-deviceoptionsopportunitytoupgrade .third-col-body .field--name-body #device-options-buy-btn {
-    width: inherit;
-  }
-  /* DEVICE OPTIONS END **/
-  /** GETTING STARTED BEGIN */
-  #block-getstartedletsgetstarted {
-    margin-top: 15px;
-  }
-  #block-getstartedletsgetstarted .img-div {
-    width: 45%;
-    margin-right: 15px;
+  #block-deviceoptionsbyod .third-col-body .field--name-body #device-options-byod-imgs img {
+    float: none;
     display: inline-block;
-    vertical-align: top;
+    margin: 10px 30px 0 20px;
   }
+  #block-getstartedletsgetstarted .img-div,
   #block-getstartedletsgetstarted .text-div {
     width: 45%;
-    margin-left: 15px;
     display: inline-block;
+  }
+  #block-getstartedletsgetstarted .img-div {
+    float: left;
+  }
+  #block-getstartedletsgetstarted .text-div {
+    float: right;
   }
   #block-getstartedletsgetstarted .text-div h2 {
     margin-top: 0;
@@ -8210,129 +8057,91 @@ footer #copyright-year p {
   #block-getstarted1username,
   #block-getstartedstep2,
   #block-getstartedstep3 {
-    margin-top: 5px;
     padding: 0 10px;
-  }
-  #block-getstarted1username .third-col-image,
-  #block-getstartedstep2 .third-col-image,
-  #block-getstartedstep3 .third-col-image {
-    float: none;
-    margin-bottom: 10px;
-  }
-  #block-getstarted1username .third-col-image .field--name-field-image-block img,
-  #block-getstartedstep2 .third-col-image .field--name-field-image-block img,
-  #block-getstartedstep3 .third-col-image .field--name-field-image-block img {
-    height: 140px;
-    width: auto;
-  }
-  #block-getstarted1username .third-col-header-text,
-  #block-getstartedstep2 .third-col-header-text,
-  #block-getstartedstep3 .third-col-header-text,
-  #block-getstarted1username .third-col-body,
-  #block-getstartedstep2 .third-col-body,
-  #block-getstartedstep3 .third-col-body {
-    float: none;
-    width: 100%;
+    text-align: left;
   }
   #block-getstarted1username .third-col-header-text h3,
   #block-getstartedstep2 .third-col-header-text h3,
   #block-getstartedstep3 .third-col-header-text h3 {
-    margin: 35px 0 25px 0;
+    text-align: left;
+    margin: 20px 0;
   }
-  #block-getstarted1username .third-col-body .field--name-body #request-username {
-    width: 100%;
-    margin-top: 30px;
+  #block-getstarted1username .third-col-body .field--name-body .item {
+    margin-top: 20px;
   }
-  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod #device-options-step2-byod-text p {
-    padding-top: 0;
+  #block-getstartedstep2 .third-col-body .field--name-body {
+    text-align: left;
   }
+  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod,
   #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy {
-    margin-top: 25px;
+    width: 100%;
+    margin: 0;
   }
-  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy #device-options-step2-buy-text p {
-    padding-top: 0;
+  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod div,
+  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy div {
+    width: 70%;
   }
-  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy-now {
+  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-devices {
     width: 100%;
   }
-  /* GETTING STARTED END **/
+  #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-devices img {
+    float: none;
+    display: inline;
+    padding: 30px;
+  }
+  #block-getstartedstep2 .third-col-body .field--name-body .item {
+    margin-top: 40px;
+  }
 }
-/*--------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------*/
 /*
  * Large devices (large desktops, 1200px and up)
  */
 @media (min-width: 1200px) {
-  /** HOME PAGE BEGIN */
+  body {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  .block {
+    margin: 40px 0;
+  }
+  #block-homepagealwaysfirstalwaysfresh {
+    height: 360px;
+  }
   #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh {
     background-position: 0 0;
-    background-size: contain;
-    height: 375px;
+    padding-top: 30px;
+    vertical-align: top;
   }
   #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text {
-    padding-right: 375px;
+    padding-right: 380px;
+    text-align: center;
   }
   #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text h2 {
-    padding-right: 0;
+    padding: 0 80px 20px 80px;
   }
   #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios,
   #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android {
-    width: 30%;
+    margin: 10px auto 30px auto;
+    display: inline-block;
   }
-  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios a img,
-  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android a img {
-    max-height: 100px;
-    max-width: 100px;
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-img,
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-img {
+    display: block;
+    float: none;
     margin-bottom: 20px;
   }
-  #block-homepagedirectvendorblock .img-div .field--name-field-image-block img {
-    max-height: 200px;
-    max-width: 200px;
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-text,
+  #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-text {
+    display: block;
+    float: none;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
   }
-  #block-homepage247support {
-    padding-top: 30px;
-    padding-bottom: 40px;
-    padding-left: 60px;
-  }
-  /* HOMEPAGE END **/
-  /** WHY IUNFI BEGIN */
-  #block-whyiunfidirectvendorordering,
-  #block-whyiunficustomspecificpricing,
-  #block-whyiunfinewdiscounteditems,
-  #block-whyiunfimonthlypromotions {
-    margin-top: 30px;
-  }
-  #block-whyiunfidirectvendorordering .half-col-wrapper .half-col-header-wrapper .half-col-image,
-  #block-whyiunficustomspecificpricing .half-col-wrapper .half-col-header-wrapper .half-col-image,
-  #block-whyiunfinewdiscounteditems .half-col-wrapper .half-col-header-wrapper .half-col-image,
-  #block-whyiunfimonthlypromotions .half-col-wrapper .half-col-header-wrapper .half-col-image {
-    float: right;
-  }
-  #block-whyiunfidirectvendorordering .half-col-wrapper .half-col-header-wrapper .half-col-image img,
-  #block-whyiunficustomspecificpricing .half-col-wrapper .half-col-header-wrapper .half-col-image img,
-  #block-whyiunfinewdiscounteditems .half-col-wrapper .half-col-header-wrapper .half-col-image img,
-  #block-whyiunfimonthlypromotions .half-col-wrapper .half-col-header-wrapper .half-col-image img {
-    max-height: 100px;
-    max-width: 100px;
-  }
-  #block-whyiunfidirectvendorordering .half-col-wrapper .half-col-body-wrapper .half-col-body .field--name-body ul li,
-  #block-whyiunficustomspecificpricing .half-col-wrapper .half-col-body-wrapper .half-col-body .field--name-body ul li,
-  #block-whyiunfinewdiscounteditems .half-col-wrapper .half-col-body-wrapper .half-col-body .field--name-body ul li,
-  #block-whyiunfimonthlypromotions .half-col-wrapper .half-col-body-wrapper .half-col-body .field--name-body ul li {
-    margin: 25px 0;
-  }
-  /* WHY IUNFI END **/
-  /** DEVICE OPTIONS BEGIN */
-  #block-deviceoptionsbyod .third-col-image .field--name-field-image-block img {
-    width: 120px;
-    height: 120px;
-  }
-  /* DEVICE OPTIONS END **/
-  /** SUPPORT BEGIN */
-  #block-views-block-support-videos-block-1 .form-group .view-id-support_videos .view-content {
-    text-align: left;
-  }
-  #block-views-block-support-videos-block-1 .form-group .view-id-support_videos .view-content .views-row {
-    width: 125px;
-  }
-  /* SUPPORT END **/
 }

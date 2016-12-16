@@ -7324,11 +7324,14 @@ ul {
 .popover ul:last-child {
   margin-bottom: 0;
 }
+li {
+  margin: 10px 0;
+}
 .page-header {
   margin-top: 0;
 }
 .footer {
-  margin-top: 45px;
+  margin-top: 15px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5;

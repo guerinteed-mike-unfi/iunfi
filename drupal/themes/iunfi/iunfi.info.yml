@@ -31,3 +31,4 @@ regions:
 libraries:
   - 'iunfi/global-styling'
   - 'iunfi/bootstrap-scripts'
+  - 'iunfi/js-header'
