@@ -7583,7 +7583,7 @@ h3 {
 footer {
   background-color: #3f4856;
   text-align: center;
-  height: 500px;
+  height: 300px;
 }
 footer ul li {
   text-align: center;
@@ -7616,7 +7616,6 @@ footer #copyright-year p {
   margin: 20px 0;
 }
 #block-homepagealwaysfirstalwaysfresh {
-  background-color: yellow;
   padding-top: 0;
   padding-bottom: 10px;
   color: #ffffff;
@@ -7689,6 +7688,8 @@ footer #copyright-year p {
 }
 #block-homepage247support .field--name-body .right-div a {
   font-family: FFDINWebMedium;
+  font-weight: bold;
+  color: #6e6259;
 }
 #block-getstartedtoday {
   text-align: center;
@@ -7765,6 +7766,7 @@ footer #copyright-year p {
   background-color: #0091da;
   font-family: FFDINWebMedium;
   color: #ffffff;
+  font-weight: bold;
 }
 #block-deviceoptionsbyod .third-col-body .field--name-body #device-options-byod-imgs {
   width: 50%;
@@ -7796,6 +7798,7 @@ footer #copyright-year p {
   background-color: #0091da;
   font-family: FFDINWebMedium;
   color: #ffffff;
+  font-weight: bold;
 }
 #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-byod,
 #block-getstartedstep2 .third-col-body .field--name-body #device-options-step2-buy {
@@ -7859,6 +7862,21 @@ footer #copyright-year p {
   h3 {
     font-size: 26px;
   }
+  footer .region-footer #block-iunfi-footer ul {
+    text-align: center;
+  }
+  footer .region-footer #block-iunfi-footer ul li {
+    display: inline-block;
+    border-right: 2px solid #ffffff;
+    line-height: 15%;
+  }
+  footer .region-footer #block-iunfi-footer ul li a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  footer .region-footer #block-iunfi-footer ul li:last-child {
+    border-right: none;
+  }
   #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh {
     background-repeat: no-repeat;
     background-position: -280px 0;
@@ -7917,6 +7935,7 @@ footer #copyright-year p {
   #block-homepage247support .field--name-body .right-div {
     float: right;
     width: 30%;
+    margin-top: 35px;
   }
   #block-getstartedtoday {
     padding: 30px;
@@ -7960,6 +7979,10 @@ footer #copyright-year p {
   #block-getstartedstep2 .third-col-header-text h3,
   #block-getstartedstep3 .third-col-header-text h3 {
     text-align: center;
+    margin-bottom: 20px;
+  }
+  #block-getstarted1username .third-col-body .field--name-body .unfi-blue {
+    margin-top: 20px;
   }
   #block-getstartedstep2 .third-col-body .field--name-body {
     text-align: left;
@@ -8007,6 +8030,9 @@ footer #copyright-year p {
   #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-ios .home-always-fresh-a-text,
   #block-homepagealwaysfirstalwaysfresh .field--name-body #home-always-fresh #home-always-fresh-text #home-always-fresh-android .home-always-fresh-a-text {
     text-align: left;
+  }
+  #block-homepage247support .field--name-body .right-div {
+    margin-top: 25px;
   }
   #block-deviceoptionsheader .img-div,
   #block-deviceoptionsheader .text-div {
